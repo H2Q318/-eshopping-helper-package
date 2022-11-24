@@ -12,7 +12,7 @@ const FilterSign = {
 };
 
 export class Filter {
-  static produce({ filter }: { filter: string | string[] }) {
+  static produce({ filter }: { filter: string | string[] }): FilterTransform[] {
     let listFilter: FilterTransform[] = [];
 
     if (!filter || filter.length === 0) return listFilter;

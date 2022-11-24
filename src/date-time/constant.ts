@@ -1,4 +1,4 @@
-export const DateTime = Object.freeze({
+export const DATE_TIME = Object.freeze({
   TIMEZONE: {
     GMT7: 'Asia/Ho_Chi_Minh',
     GMT7_OFFSET: 420,
