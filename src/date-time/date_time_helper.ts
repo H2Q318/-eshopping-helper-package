@@ -1,5 +1,5 @@
 import * as moment from 'moment-timezone';
-import { DateTime } from './constant';
+import { DATE_TIME } from './constant';
 
 export class DateTimeHelper {
   static convertToUtc(dateTime: string, format = '') {
@@ -11,11 +11,11 @@ export class DateTimeHelper {
   }
 
   static startOfDay(date: string) {
-    return moment(date).tz(DateTime.TIMEZONE.GMT7).startOf('day').utc();
+    return moment(date).tz(DATE_TIME.TIMEZONE.GMT7).startOf('day').utc();
   }
 
   static endOfDay(date: string) {
-    return moment(date).tz(DateTime.TIMEZONE.GMT7).endOf('day').utc();
+    return moment(date).tz(DATE_TIME.TIMEZONE.GMT7).endOf('day').utc();
   }
 
   static startOfToday() {
@@ -29,6 +29,6 @@ export class DateTimeHelper {
   }
 
   static getTodayString() {
-    return moment().tz(DateTime.TIMEZONE.GMT7).format(DateTime.DATE_FORMAT.DATE);
+    return moment().tz(DATE_TIME.TIMEZONE.GMT7).format(DATE_TIME.DATE_FORMAT.DATE);
   }
 }
