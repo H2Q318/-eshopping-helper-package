@@ -4,7 +4,7 @@ interface FilterTransform {
   value: string;
 }
 
-const FilterSign = {
+export const FilterSign = {
   $eq: '=',
   $gt: '>',
   $lt: '<',
